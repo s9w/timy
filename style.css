@@ -1,0 +1,51 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;
+    font-size: 8pt;
+}
+h2{
+    margin-bottom: 0;
+}
+a{
+    color: #08C;
+    text-decoration: none;
+}
+a:visited{
+    color: #005289;
+}
+.title:hover {
+    border-bottom: 1px solid #a9a9a7;
+}
+.read{
+    opacity: 0.3;
+}
+.hidebox{
+    width: 30px;
+    height: 8px;
+    display: inline-block;
+    background-color: #ADE29F;
+}
+.comment{
+    text-align: right;
+    width: 3em;
+    display: inline-block;
+}
+.title{
+    margin-left: 10px;
+}
+td{
+    padding: 0;
+}
+.newDay{
+    border-top: 1px solid red;
+}
+.weekday{
+    float: right;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
+.hidden {
+    visibility: hidden;
+}
