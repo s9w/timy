@@ -55,7 +55,7 @@ var Timy = React.createClass({
     render: function() {
         return (
             <div className="commentBox">
-                <h1>timy (tiny timer)</h1>
+                <h1><a href="https://github.com/s9w/timy">timy</a> (tiny timer)</h1>
 
                 <h2>Duration: {this.state.durationMinutes} Minutes</h2>
                 <input type="range" min="1" max="30" step="1"
