@@ -9,7 +9,7 @@ var Timy = React.createClass({
         return {
             durationMinutes: initialDuration,
             timeLeftSec: initialDuration*60,
-            volume: 1.0,
+            volume: 50,
             running: false
         };
     },
@@ -40,7 +40,7 @@ var Timy = React.createClass({
         });
     },
     changeVolume: function(event){
-        document.getElementById("audioElement").volume = event.target.value;
+        document.getElementById("audioElement").volume = event.target.value/100;
         this.setState({
             volume: event.target.value
         });
@@ -70,8 +70,8 @@ var Timy = React.createClass({
                 </div>
 
 
-                <h2>Alarm volume: {parseFloat(this.state.volume).toFixed(2)}</h2>
-                <input type="range" min="0.0" max="1.0" step="0.01"
+                <h2>Alarm volume: {this.state.volume}%</h2>
+                <input type="range" min="0" max="100" step="1"
                        onChange={this.changeVolume}
                        value={this.state.volume} />
 
