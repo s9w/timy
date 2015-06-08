@@ -6,10 +6,12 @@ function padInt(num, length) {
 var Timy = React.createClass({
     getInitialState() {
         var initialDuration = 3;
+        var initialVolume = 50;
+        document.getElementById("audioElement").volume = initialVolume/100;
         return {
             durationMinutes: initialDuration,
             timeLeftSec: initialDuration*60,
-            volume: 50,
+            volume: initialVolume,
             running: false
         };
     },
