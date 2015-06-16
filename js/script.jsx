@@ -67,8 +67,8 @@ var Timy = React.createClass({
 
                 <h2>Time left: {Math.floor(this.state.timeLeftSec/60)}:{padInt(Math.floor(this.state.timeLeftSec%60),2)}</h2>
                 <div>
-                    <button onClick={this.start}>Start</button>
-                    <button onClick={this.stop}>Stop</button>
+                    <button onClick={this.start} disabled={this.state.running}>Start</button>
+                    <button onClick={this.stop} disabled={!this.state.running}>Stop</button>
                 </div>
 
 
