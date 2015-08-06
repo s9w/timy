@@ -6,3 +6,9 @@ Hosted version on [s9w.github.io/timy](http://s9w.github.io/timy/).
 Screenshot:
 
 ![](https://raw.githubusercontent.com/s9w/timy/master/screenshot.png)
+
+test
+
+<img src="https://raw.githubusercontent.com/s9w/font_compare/master/aa_anim.gif" alt="Drawing" style="width: 200px;"/>
+
+ghj
